@@ -15,3 +15,5 @@ CSS should apply to both mobile and desktop users and scale accordingly.
 It will use React from NextJS instead of plain HTML+CSS+JS/TS.
 
 It will utilize JavaScript over TypeScript due to it being an individual project.
+
+It will use AI Image creation for certain pictures.
