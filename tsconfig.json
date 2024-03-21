@@ -27,8 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/layout.tsx",
-    "app/BottomMenu.js",
-    "app/TopMenu.js",
+    "app/BottomMenu/BottomMenu.js",
+    "app/TopMenu/TopMenu.js",
     "app/page.js"
   ],
   "exclude": ["node_modules"]
