@@ -1,6 +1,6 @@
-"use client";
-import twitterlogo from "../Assets/twitter.png";
+import React from "react";
+import twitterIcon from "./Twitter.png"; // assuming correct path to image file
 
 export const TwitterLogo = () => {
-  return <img src={twitterlogo} alt="twitter Icon" />;
+  return <img src={twitterIcon.src} alt="Twitter Icon" />;
 };
