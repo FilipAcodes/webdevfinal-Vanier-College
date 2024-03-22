@@ -1,0 +1,17 @@
+.imgicon {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+.iconbtn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.iconbtn:hover {
+  background-color: gray;
+}
