@@ -1,18 +1,18 @@
 .imgicon {
-  width: 25px;
-  height: 25px;
-  padding: 3px;
-  object-fit: fill;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .iconbtn {
+  width: 35px;
+  height: 35px;
   background-color: white;
-  border: 1px solid black;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-}
-
-.iconbtn:hover {
-  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

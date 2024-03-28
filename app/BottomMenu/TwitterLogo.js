@@ -1,5 +1,5 @@
 import React from "react";
-import twitterIcon from "./Twitter.png";
+import twitterIcon from "../BottomMenu/Images/Twitter.png";
 import "./ImageLogo.css";
 
 export const TwitterLogo = () => {

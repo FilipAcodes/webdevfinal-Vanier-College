@@ -1,5 +1,5 @@
 "use client";
-import facebookIcon from "./facebookicon.png";
+import facebookIcon from "../BottomMenu/Images/facebookicon.png";
 import "./ImageLogo.css";
 
 export const FaceBook = () => {

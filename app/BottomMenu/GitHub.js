@@ -1,5 +1,5 @@
 "use client";
-import gitHubLogo from "./GitHubLogo.jpg";
+import gitHubLogo from "../BottomMenu/Images/GitHubLogo.jpg";
 import "./ImageLogo.css";
 
 export const GitHub = () => {

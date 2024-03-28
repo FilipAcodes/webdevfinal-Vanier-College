@@ -1,5 +1,11 @@
 "use client";
+import mailIcon from "../BottomMenu/Images/mailLogo.png";
+import "./ImageLogo.css";
 
 export const Email = () => {
-  return <div>Email</div>;
+  return (
+    <button className="iconbtn">
+      <img src={mailIcon.src} className="imgicon" />
+    </button>
+  );
 };
