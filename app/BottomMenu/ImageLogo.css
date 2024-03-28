@@ -2,6 +2,7 @@
   width: 25px;
   height: 25px;
   padding: 3px;
+  object-fit: fill;
 }
 
 .iconbtn {

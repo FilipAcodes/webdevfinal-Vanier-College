@@ -1,6 +1,7 @@
 import React from "react";
-import twitterIcon from "./Twitter.png"; // assuming correct path to image file
+import twitterIcon from "./Twitter.png";
 import "./ImageLogo.css";
+
 export const TwitterLogo = () => {
   return (
     <button className="iconbtn">
