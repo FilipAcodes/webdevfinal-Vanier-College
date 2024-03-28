@@ -8,7 +8,7 @@ export const MainBody = () => {
       <div className="text-container">
         <div className="intro">
           <h1 className="headerintro">
-            Hi, I'm Filip Altankov
+            Hi, I'm Filip Altankov,
             <br /> Full-Stack Web Developer.
           </h1>
           <br />
