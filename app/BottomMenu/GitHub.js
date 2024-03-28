@@ -4,8 +4,13 @@ import "./ImageLogo.css";
 
 export const GitHub = () => {
   return (
-    <button className="iconbtn">
-      <img src={gitHubLogo.src} className="imgicon" />
-    </button>
+    <a
+      href="https://www.github.com/"
+      className="iconbtn"
+      target="blank"
+      rel="noopener noreferrer"
+    >
+      <img src={gitHubLogo.src} className="imgicon" alt="githublogo" />
+    </a>
   );
 };

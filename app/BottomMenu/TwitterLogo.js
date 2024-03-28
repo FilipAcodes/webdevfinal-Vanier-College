@@ -4,8 +4,13 @@ import "./ImageLogo.css";
 
 export const TwitterLogo = () => {
   return (
-    <button className="iconbtn">
+    <a
+      href="https://www.twitter.com/"
+      className="iconbtn"
+      target="blank"
+      rel="noopener noreferrer"
+    >
       <img src={twitterIcon.src} alt="Twitter Icon" className="imgicon" />
-    </button>
+    </a>
   );
 };

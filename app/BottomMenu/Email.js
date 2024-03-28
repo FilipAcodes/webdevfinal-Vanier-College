@@ -4,8 +4,8 @@ import "./ImageLogo.css";
 
 export const Email = () => {
   return (
-    <button className="iconbtn">
-      <img src={mailIcon.src} className="imgicon" />
-    </button>
+    <a className="iconbtn" href="mailto:placeholderemail@gmail.com">
+      <img src={mailIcon.src} className="imgicon" alt="emailIcon" />
+    </a>
   );
 };
