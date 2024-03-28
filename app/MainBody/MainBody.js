@@ -17,8 +17,9 @@ export const MainBody = () => {
           <p className="description">
             I am a full-stack web developer proficient in frontend frameworks
             like React.js and backend technologies like Node.js. Expertise with
-            API integration. My strong communication, problem-solving and
-            teamwork skills complement my technical proficiency.
+            API integration.
+            <br /> My strong communication, problem-solving and teamwork skills
+            complement my technical proficiency.
           </p>
         </div>
       </div>
