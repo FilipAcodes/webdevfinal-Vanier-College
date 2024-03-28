@@ -1,13 +1,14 @@
 import { TopMenu } from "./TopMenu/TopMenu";
 import { BottomMenu } from "./BottomMenu/BottomMenu";
+import { MainBody } from "./MainBody/MainBody";
 import "./cssreset.css";
+import "./mainpage.css";
 
 export default function Home() {
   return (
-    <main>
+    <main className="landingpage">
       <TopMenu />
-      <h1>Welcome to Filip's Portofolio!</h1>
-      <h2>Get started</h2>
+      <MainBody />
       <BottomMenu />
     </main>
   );
