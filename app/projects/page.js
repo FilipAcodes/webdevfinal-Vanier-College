@@ -1,9 +1,9 @@
-import { BottomMenu } from "../BottomMenu/BottomMenu";
 import "./projectpage.css";
+import { BottomMenu } from "../BottomMenu/BottomMenu";
 export default function Projects() {
   return (
-    <div>
+    <>
       <BottomMenu />
-    </div>
+    </>
   );
 }

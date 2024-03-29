@@ -1,12 +1,12 @@
-import { BottomMenu } from "./BottomMenu/BottomMenu";
 import { MainBody } from "./MainBody/MainBody";
+import { BottomMenu } from "./BottomMenu/BottomMenu";
 import "./cssreset.css";
 
 export default function Home() {
   return (
-    <main className="landingpage">
-      <MainBody />
+    <main>
       <BottomMenu />
+      <MainBody />
     </main>
   );
 }

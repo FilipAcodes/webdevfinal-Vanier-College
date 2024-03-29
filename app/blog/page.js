@@ -1,5 +1,8 @@
-import React from "react";
-
+import { BottomMenu } from "../BottomMenu/BottomMenu";
 export default function BlogPage() {
-  return <h1>blogpage</h1>;
+  return (
+    <>
+      <BottomMenu />
+    </>
+  );
 }

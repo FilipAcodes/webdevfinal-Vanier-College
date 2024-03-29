@@ -1,3 +1,9 @@
+import { BottomMenu } from "../BottomMenu/BottomMenu";
+
 export default function ServicesPage() {
-  return <h1>serivces</h1>;
+  return (
+    <>
+      <BottomMenu />
+    </>
+  );
 }

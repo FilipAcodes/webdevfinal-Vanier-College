@@ -16,15 +16,25 @@
 }
 
 .linkactive {
-  border-bottom: 2px solid #00ff00;
   text-decoration: none;
   color: white;
+  padding: 5px;
+  margin-left: 3px;
+  background: rgb(44, 55, 89);
+  background: radial-gradient(
+    circle,
+    rgba(44, 55, 89, 1) 8%,
+    rgba(81, 109, 193, 1) 92%,
+    rgba(77, 107, 195, 1) 100%,
+    rgba(77, 107, 195, 1) 100%
+  );
 }
 .link {
   text-decoration: none;
   color: white;
+  padding: 5px;
+  margin-left: 3px;
 }
 .routers {
   font-size: 30px;
-  padding-left: 5px;
 }
