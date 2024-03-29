@@ -2,10 +2,14 @@
 import "./projectpage.css";
 import { BottomMenu } from "../BottomMenu/BottomMenu";
 import Carousel from "react-bootstrap/Carousel";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
+import bpmshowcase from "./projectimages/BPM.gif";
+import alieninvader from "./projectimages/alieninvader.jpg";
+import twitterclone from "./projectimages/critter.png";
+import ecommerce from "./projectimages/FrogoShop.png";
 
 import "./projectpage.css";
 export default function Projects() {
+  console.log(bpmshowcase);
   return (
     <>
       <BottomMenu />
@@ -13,28 +17,53 @@ export default function Projects() {
         <Carousel>
           <Carousel.Item>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpFN1Tvo80rYwu-eXsDNNzsuPITOdtyRPlYIsIqKaIbw&s"
-              text="First slide"
+              src={bpmshowcase.src}
+              text="BPM"
+              alt="bpmshowcase"
+              className="carouselimg"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img text="Second slide" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img text="Third slide" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>"BPM" Musical Search Engine</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                BPM was created using different front-end and back-end
+                technologies.
               </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              text="Alien Invader"
+              src={alieninvader.src}
+              alt="alieninvader"
+              className="carouselimg"
+            />
+            <Carousel.Caption>
+              <h3>Alien Invader</h3>
+              <p>Alien Invader was created using JavaScript OOP.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              text="Twitter Clone"
+              src={twitterclone.src}
+              alt="twitter clone"
+              className="carouselimg"
+            />
+            <Carousel.Caption>
+              <h3>"Critter" - Twitter Clone</h3>
+              <p>"Critter" was used to practice React & API integrations.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              text="E-Commerce Project"
+              src={ecommerce.src}
+              alt="e-commerce project"
+              className="carouselimg"
+            />
+            <Carousel.Caption>
+              <h3>"Frogo Shop" E-commerce</h3>
+              <p>Frogo Shop was created with various team members.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
