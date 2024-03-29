@@ -8,12 +8,27 @@ import twitterclone from "./projectimages/critter.png";
 
 import "./projectpage.css";
 export default function Projects() {
+  const sendUserToCritter = () => {
+    window.open(
+      "https://github.com/FilipAcodes/Critter-Twitter-Clone",
+      "_blank"
+    );
+  };
+  const sendUserToBPM = () => {
+    window.open("https://github.com/FilipAcodes/Final-Bpm", "_blank");
+  };
+  const sendUserToAlienInvader = () => {
+    window.open(
+      "https://github.com/FilipAcodes/Alien-Invader-JavaScript-OOP",
+      "_blank"
+    );
+  };
   return (
     <>
       <BottomMenu />
       <div className="carouselcontainer">
         <Carousel>
-          <Carousel.Item>
+          <Carousel.Item onClick={sendUserToBPM}>
             <img
               src={bpmshowcase.src}
               text="BPM"
@@ -21,14 +36,14 @@ export default function Projects() {
               className="carouselimg"
             />
             <Carousel.Caption>
-              <h3>"BPM" Musical Search Engine</h3>
+              <h3>Musical Search Engine</h3>
               <p>
                 BPM was created using different front-end and back-end
                 technologies.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item onClick={sendUserToAlienInvader}>
             <img
               text="Alien Invader"
               src={alieninvader.src}
@@ -40,7 +55,7 @@ export default function Projects() {
               <p>Alien Invader was created using JavaScript OOP.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item onClick={sendUserToCritter}>
             <img
               text="Twitter Clone"
               src={twitterclone.src}
