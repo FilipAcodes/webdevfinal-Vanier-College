@@ -5,11 +5,9 @@ import Carousel from "react-bootstrap/Carousel";
 import bpmshowcase from "./projectimages/BPM.gif";
 import alieninvader from "./projectimages/alieninvader.jpg";
 import twitterclone from "./projectimages/critter.png";
-import ecommerce from "./projectimages/FrogoShop.png";
 
 import "./projectpage.css";
 export default function Projects() {
-  console.log(bpmshowcase);
   return (
     <>
       <BottomMenu />
@@ -52,18 +50,6 @@ export default function Projects() {
             <Carousel.Caption>
               <h3>"Critter" - Twitter Clone</h3>
               <p>"Critter" was used to practice React & API integrations.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              text="E-Commerce Project"
-              src={ecommerce.src}
-              alt="e-commerce project"
-              className="carouselimg"
-            />
-            <Carousel.Caption>
-              <h3>"Frogo Shop" E-commerce</h3>
-              <p>Frogo Shop was created with various team members.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
