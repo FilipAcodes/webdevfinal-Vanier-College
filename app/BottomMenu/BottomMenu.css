@@ -1,7 +1,7 @@
 .bottomMenu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: black;
   position: absolute;
   top: 0%;
@@ -10,4 +10,20 @@
   width: 100%;
   text-align: center;
   padding-top: 5px;
+}
+
+.contactflex {
+  display: flex;
+}
+
+.linkactive {
+  border-bottom: 2px solid #00ff00;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+.routers {
+  font-size: 30px;
+  padding-left: 5px;
 }
