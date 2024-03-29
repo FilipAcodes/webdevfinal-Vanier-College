@@ -22,6 +22,18 @@ export const BottomMenu = () => {
         >
           Projects
         </Link>
+        <Link
+          href="/services"
+          className={`link${pathname === "/services" ? "active" : ""}`}
+        >
+          Services
+        </Link>
+        <Link
+          href="/blog"
+          className={`link${pathname === "/blog" ? "active" : ""}`}
+        >
+          Blog
+        </Link>
       </div>
       <div className="contactflex">
         <TwitterLogo />

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const MainBody = () => {
   return (
-    <div>
+    <div className="pictureandtextcontainer">
       <div className="text-container">
         <div className="intro">
           <h1 className="headerintro">
@@ -23,15 +23,14 @@ export const MainBody = () => {
             complement my technical proficiency.
           </p>
         </div>
+        <Link href="/projects" className="learnmoreaboutme">
+          My Projects
+        </Link>
       </div>
+      <div></div>
       <div className="img-container">
         <img src={randomman.src} className="profileimg" alt="randomMan" />
       </div>
-      <button className="learnbutton">
-        <Link href="/projects" className="learnmoreaboutme">
-          Projects
-        </Link>
-      </button>
     </div>
   );
 };
