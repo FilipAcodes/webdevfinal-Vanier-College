@@ -19,9 +19,11 @@
 .linkactive {
   border-bottom: 2px solid #00ff00;
   text-decoration: none;
+  color: white;
 }
 .link {
   text-decoration: none;
+  color: white;
 }
 .routers {
   font-size: 30px;

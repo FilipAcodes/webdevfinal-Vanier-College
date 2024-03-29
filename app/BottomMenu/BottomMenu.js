@@ -15,7 +15,7 @@ export const BottomMenu = () => {
       <div className="routers">
         <Link href="/" className={`link${pathname === "/" ? "active" : ""}`}>
           Home
-        </Link>
+        </Link>{" "}
         <Link
           href="/projects"
           className={`link${pathname === "/projects" ? "active" : ""}`}
