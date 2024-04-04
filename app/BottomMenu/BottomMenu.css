@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  right: 0;
+  height: 44px;
   color: white;
   width: 100%;
   text-align: center;
@@ -12,10 +13,26 @@
 }
 
 .contactflex {
+  position: absolute;
+  top: 0%;
+  right: 0%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 18px;
 }
 
-.linkactive {
+.contactflex.active {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.contactflex > * {
+  margin-top: 10px;
+}
+
+.link.active {
   text-decoration: none;
   color: white;
   padding: 5px;
@@ -29,12 +46,22 @@
     rgba(77, 107, 195, 1) 100%
   );
 }
+
 .link {
   text-decoration: none;
   color: white;
   padding: 5px;
   margin-left: 3px;
 }
+
 .routers {
   font-size: 30px;
+}
+.hamburger {
+  margin-top: 10px;
+}
+@media (max-width: 576px) {
+  .link .link.active {
+    font-size: 15px;
+  }
 }
