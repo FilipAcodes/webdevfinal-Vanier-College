@@ -1,0 +1,24 @@
+.underconstruction {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .underconstruction {
+    height: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .underconstruction {
+    height: 70%;
+    width: 60%;
+    object-position: 70% 50%;
+    object-fit: cover;
+  }
+}
