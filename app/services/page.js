@@ -12,6 +12,7 @@ export default function ServicesPage() {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,6 +32,7 @@ export default function ServicesPage() {
         email: "",
         services: "",
       });
+      setIsSubmitted(true);
     } else {
       setErrors(newErrors);
     }
@@ -58,8 +60,17 @@ export default function ServicesPage() {
   return (
     <>
       <BottomMenu />
+      {isSubmitted && !Object.keys(errors).length ? (
+        <div className="successmessage">
+          Thank you, the request has been successfully sent!
+        </div>
+      ) : (
+        ""
+      )}
       <form className="formcontainer" onSubmit={handleSubmit}>
-        <h1>Fill out the form with requested service!</h1>
+        <h1 className="formheader">
+          Fill out the form with requested service!
+        </h1>
         <label htmlFor="fname">First Name</label>
         <input
           id="fname"
