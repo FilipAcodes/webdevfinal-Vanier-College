@@ -59,6 +59,7 @@ export default function ServicesPage() {
     <>
       <BottomMenu />
       <form className="formcontainer" onSubmit={handleSubmit}>
+        <h1>Fill out the form with requested service!</h1>
         <label htmlFor="fname">First Name</label>
         <input
           id="fname"
@@ -84,33 +85,40 @@ export default function ServicesPage() {
           onChange={handleChange}
         />
         {errors.email && <span className="error">{errors.email}</span>}
-        <label htmlFor="services">Services requested:</label>
-        <label htmlFor="webbuilding">Full-Stack Webpage.</label>
-        <input
-          type="radio"
-          id="webbuilding"
-          name="services"
-          value="Full-Stack Webpage"
-          onChange={handleChange}
-        />
-        <label htmlFor="frontend">Front-end Webpage.</label>
-        <input
-          type="radio"
-          id="frontend"
-          name="services"
-          value="Front-end Webpage"
-          onChange={handleChange}
-        />
-        <label htmlFor="backend">Back-end Webpage.</label>
-        <input
-          type="radio"
-          id="backend"
-          name="services"
-          value="Back-end Webpage"
-          onChange={handleChange}
-        />
+        <div className="inputspacer">
+          <label htmlFor="webbuilding">Full-Stack Webpage.</label>
+          <input
+            type="radio"
+            id="webbuilding"
+            name="services"
+            value="Full-Stack Webpage"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="inputspacer">
+          <label htmlFor="frontend">Front-end Webpage.</label>
+          <input
+            type="radio"
+            id="frontend"
+            name="services"
+            value="Front-end Webpage"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="inputspacer">
+          <label htmlFor="backend">Back-end Webpage.</label>
+          <input
+            type="radio"
+            id="backend"
+            name="services"
+            value="Back-end Webpage"
+            onChange={handleChange}
+          />
+        </div>
         {errors.services && <span className="error">{errors.services}</span>}
-        <button type="submit">Submit</button>
+        <button type="submit" className="submitbtn">
+          Submit
+        </button>
       </form>
     </>
   );

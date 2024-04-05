@@ -6,4 +6,24 @@
   color: white;
   display: flex;
   flex-direction: column;
+  background-color: #4d6bc3;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 18px;
+}
+
+.inputspacer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitbtn {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
 }
