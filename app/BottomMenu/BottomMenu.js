@@ -62,6 +62,9 @@ export const BottomMenu = () => {
       <div className={`contactflex${showMenu ? "" : " active"}`}>
         {showMenu ? (
           <>
+            <button onClick={toggleMenu} className="closebtn">
+              X
+            </button>
             <TwitterLogo />
             <FaceBook />
             <GitHub />
