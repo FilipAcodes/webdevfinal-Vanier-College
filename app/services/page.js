@@ -1,6 +1,6 @@
 "use client";
-import { BottomMenu } from "../BottomMenu/BottomMenu";
 import React, { useState } from "react";
+import { BottomMenu } from "../BottomMenu/BottomMenu";
 import "./services.css";
 
 export default function ServicesPage() {
@@ -20,6 +20,15 @@ export default function ServicesPage() {
       ...formData,
       [name]: value,
     });
+
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
+
+    setIsSubmitted(false);
   };
 
   const handleSubmit = (e) => {
@@ -32,9 +41,11 @@ export default function ServicesPage() {
         email: "",
         services: "",
       });
+      setErrors({});
       setIsSubmitted(true);
     } else {
       setErrors(newErrors);
+      setIsSubmitted(false);
     }
   };
 
@@ -60,12 +71,10 @@ export default function ServicesPage() {
   return (
     <>
       <BottomMenu />
-      {isSubmitted && !Object.keys(errors).length ? (
+      {isSubmitted && Object.keys(errors).length === 0 && (
         <div className="successmessage">
           Thank you, the request has been successfully sent!
         </div>
-      ) : (
-        ""
       )}
       <form className="formcontainer" onSubmit={handleSubmit}>
         <h1 className="formheader">
