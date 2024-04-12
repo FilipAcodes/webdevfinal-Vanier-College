@@ -80,7 +80,7 @@ export default function ServicesPage() {
         <h1 className="formheader">
           Fill out the form with requested service!
         </h1>
-        <label htmlFor="fname">First Name</label>
+        <label htmlFor="fname">First Name:</label>
         <input
           id="fname"
           name="fname"
@@ -88,7 +88,7 @@ export default function ServicesPage() {
           onChange={handleChange}
         />
         {errors.fname && <span className="error">{errors.fname}</span>}
-        <label htmlFor="lname">Last Name</label>
+        <label htmlFor="lname">Last Name:</label>
         <input
           id="lname"
           name="lname"
@@ -105,6 +105,7 @@ export default function ServicesPage() {
           onChange={handleChange}
         />
         {errors.email && <span className="error">{errors.email}</span>}
+        <span className="service-req">Service Requested:</span>
         <div className="inputspacer">
           <label htmlFor="webbuilding">Full-Stack Webpage.</label>
           <input
@@ -115,6 +116,7 @@ export default function ServicesPage() {
             onChange={handleChange}
           />
         </div>
+
         <div className="inputspacer">
           <label htmlFor="frontend">Front-end Webpage.</label>
           <input
@@ -126,7 +128,7 @@ export default function ServicesPage() {
           />
         </div>
         <div className="inputspacer">
-          <label htmlFor="backend">Back-end Webpage.</label>
+          <label htmlFor="backend">Back-end services.</label>
           <input
             type="radio"
             id="backend"

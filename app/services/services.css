@@ -1,10 +1,13 @@
 .formcontainer {
   position: absolute;
+  width: 60%;
+  height: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   background-color: #4d6bc3;
   padding: 15px;
@@ -34,7 +37,7 @@
 }
 
 .formheader {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .successmessage {
@@ -58,4 +61,13 @@
     opacity: 0;
     visibility: hidden;
   }
+}
+
+label {
+  font-weight: bold;
+}
+
+.service-req {
+  font-size: 25px;
+  font-weight: bold;
 }
