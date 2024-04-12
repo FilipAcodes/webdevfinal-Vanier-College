@@ -1,4 +1,4 @@
-# This is the final project for Web Development in Vanier College
+# This is the final project for Web Development in Vanier College for Filip Altankov
 
 ### To run the project make sure you install the dependencies and use npm run dev.
 
@@ -16,4 +16,6 @@ It will use React from NextJS instead of plain HTML+CSS+JS/TS.
 
 It will utilize JavaScript over TypeScript due to it being an individual project.
 
-It will use AI Image creation for certain pictures.
+Under the services page there will be an option to request "services". Currently it does not lead to any sort of database but it does provide confirmation if the form has been filled correctly.
+
+** Last Updated 4/12/2024 **
