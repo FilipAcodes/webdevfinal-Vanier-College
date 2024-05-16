@@ -13,6 +13,7 @@ export default function ServicesPage() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,6 +32,16 @@ export default function ServicesPage() {
     setIsSubmitted(false);
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (!value.trim()) {
+      setErrors({
+        ...errors,
+        [name]: `${name.charAt(0).toUpperCase() + name.slice(1)} is required`,
+      });
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = validateForm(formData);
@@ -43,6 +54,7 @@ export default function ServicesPage() {
       });
       setErrors({});
       setIsSubmitted(true);
+      setSelectedService("");
     } else {
       setErrors(newErrors);
       setIsSubmitted(false);
@@ -68,6 +80,14 @@ export default function ServicesPage() {
     return errors;
   };
 
+  const handleServiceChange = (e) => {
+    setSelectedService(e.target.value);
+    setFormData({
+      ...formData,
+      services: e.target.value,
+    });
+  };
+
   return (
     <>
       <BottomMenu />
@@ -86,6 +106,7 @@ export default function ServicesPage() {
           name="fname"
           value={formData.fname}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
         {errors.fname && <span className="error">{errors.fname}</span>}
         <label htmlFor="lname">Last Name:</label>
@@ -94,6 +115,7 @@ export default function ServicesPage() {
           name="lname"
           value={formData.lname}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
         {errors.lname && <span className="error">{errors.lname}</span>}
         <label htmlFor="email">Email:</label>
@@ -103,6 +125,7 @@ export default function ServicesPage() {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
         {errors.email && <span className="error">{errors.email}</span>}
         <span className="service-req">Service Requested:</span>
@@ -113,7 +136,8 @@ export default function ServicesPage() {
             id="webbuilding"
             name="services"
             value="Full-Stack Webpage"
-            onChange={handleChange}
+            onChange={handleServiceChange}
+            checked={selectedService === "Full-Stack Webpage"}
           />
         </div>
 
@@ -124,7 +148,8 @@ export default function ServicesPage() {
             id="frontend"
             name="services"
             value="Front-end Webpage"
-            onChange={handleChange}
+            onChange={handleServiceChange}
+            checked={selectedService === "Front-end Webpage"}
           />
         </div>
         <div className="inputspacer">
@@ -134,7 +159,8 @@ export default function ServicesPage() {
             id="backend"
             name="services"
             value="Back-end Webpage"
-            onChange={handleChange}
+            onChange={handleServiceChange}
+            checked={selectedService === "Back-end Webpage"}
           />
         </div>
         {errors.services && <span className="error">{errors.services}</span>}
